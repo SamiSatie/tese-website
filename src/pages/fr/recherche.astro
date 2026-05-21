@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import Card from "../../components/Card.astro";
+import { researchAxes } from "../../data/researchAxes";
+---
+
+<BaseLayout lang="fr" title="Recherche | TeSE" description="Axes de recherche de l'equipe TeSE.">
+  <PageHero
+    eyebrow="Recherche"
+    title="Conversion electromecanique d'energie pour les systemes durables et embarques."
+    description="TeSE developpe des modeles, des methodes et des moyens experimentaux pour concevoir, commander et valider les machines electriques, transducteurs et chaines de conversion d'energie."
+  />
+
+  <section class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-6 md:grid-cols-2">
+      {researchAxes.fr.map((axis) => (
+        <Card title={axis.title} description={axis.description} />
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 pb-24">
+    <div class="rounded-[2rem] bg-white p-8 shadow-soft md:p-12">
+      <h2 class="text-3xl font-semibold tracking-tight text-slate-950">Approche scientifique</h2>
+      <p class="mt-5 text-lg leading-8 text-slate-600">
+        Nos travaux associent modelisation physique, optimisation numerique, validation experimentale et integration systeme. Une attention particuliere est portee aux interactions entre conception electromagnetique, electronique de puissance, commande, contraintes thermiques et comportement mecanique.
+      </p>
+      <p class="mt-5 text-lg leading-8 text-slate-600">
+        Cette approche integree soutient le developpement de systemes electromecaniques compacts, efficaces et robustes pour la mobilite electrique, la mobilite aerienne avancee, les actionneurs industriels et les applications d'energie embarquee.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

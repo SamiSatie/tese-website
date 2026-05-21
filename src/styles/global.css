@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0f172a;
+  --color-accent: #2563eb;
+  --color-muted: #64748b;
+  --color-bg: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+.prose-tese p {
+  @apply text-slate-600 leading-8;
+}
+
+.prose-tese h2 {
+  @apply text-3xl font-semibold tracking-tight text-slate-950 mt-12 mb-4;
+}
+
+.prose-tese h3 {
+  @apply text-xl font-semibold text-slate-900 mt-8 mb-3;
+}

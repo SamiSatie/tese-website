@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import { siteConfig } from "../../data/siteConfig";
+---
+
+<BaseLayout lang="fr" title="Contact et nous rejoindre | TeSE" description="Contacter l'equipe de recherche TeSE.">
+  <PageHero
+    eyebrow="Contact et nous rejoindre"
+    title="Collaborer avec TeSE ou rejoindre l'equipe."
+    description="Nous accueillons des etudiants, candidats en these, postdoctorants et partenaires industriels interesses par les systemes de conversion electromecanique d'energie."
+  />
+
+  <section class="mx-auto grid max-w-7xl gap-8 px-6 py-16 md:grid-cols-2">
+    <div class="rounded-[2rem] bg-white p-8 shadow-soft">
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-950">Opportunites</h2>
+      <ul class="mt-6 space-y-4 text-sm leading-7 text-slate-600">
+        <li>Stages de master sur les machines electriques, la modelisation, la commande et la caracterisation experimentale.</li>
+        <li>Theses autour de la mobilite durable, des systemes embarques d'energie et de la conversion electromecanique avancee.</li>
+        <li>Postdoctorats sur la modelisation, l'optimisation, le diagnostic et la validation multiphysique.</li>
+        <li>Collaborations industrielles et projets de recherche partenariale.</li>
+      </ul>
+    </div>
+
+    <div class="rounded-[2rem] bg-slate-950 p-8 text-white shadow-soft">
+      <h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
+      <p class="mt-6 text-sm leading-7 text-slate-300">{siteConfig.lab}</p>
+      <p class="mt-2 text-sm leading-7 text-slate-300">{siteConfig.institutions}</p>
+      <p class="mt-2 text-sm leading-7 text-slate-300">{siteConfig.city}</p>
+      <a class="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950" href={`mailto:${siteConfig.contactEmail}`}>
+        {siteConfig.contactEmail}
+      </a>
+    </div>
+  </section>
+</BaseLayout>
