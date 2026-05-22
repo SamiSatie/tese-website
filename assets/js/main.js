@@ -1,11 +1,4 @@
-const menuButton = document.querySelector('.menu-button');
-const navLinks = document.querySelector('.nav-links');
-if (menuButton && navLinks) {
-  menuButton.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-}
-
-document.querySelectorAll('[data-year]').forEach((el) => {
-  el.textContent = new Date().getFullYear();
-});
+const btn=document.querySelector('[data-menu]');
+const nav=document.querySelector('[data-nav]');
+if(btn&&nav){btn.addEventListener('click',()=>nav.classList.toggle('open'));}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
