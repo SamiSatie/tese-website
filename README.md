@@ -1,22 +1,29 @@
-# TeSE - SATIE website
+# TeSE illustrated bilingual website
 
-Static bilingual website for the TeSE research team, ready for GitHub Pages.
+Static bilingual website (French / English) prepared for GitHub Pages.
+
+## What changed in this version
+
+- integrated several illustrations extracted from the TeSE presentations;
+- introduced a new illustrated card component;
+- introduced researcher cards with thumbnail, grade and main employer;
+- added personal profile pages for each permanent member;
+- kept the site fully static and compatible with free GitHub Pages hosting.
 
 ## Publish on GitHub Pages
 
-1. Create a public GitHub repository, for example `tese-site`.
-2. Upload all files at the repository root.
-3. Go to **Settings > Pages**.
-4. Select **Deploy from a branch**, branch `main`, folder `/root`.
-5. The site will be available at `https://<username>.github.io/tese-site/`.
+1. Create a public repository, for example `tese-site`.
+2. Upload all files from this folder to the repository root.
+3. In **Settings > Pages**, choose **Deploy from a branch**.
+4. Select branch `main` and folder `/root`.
+5. The site will be published at `https://<username>.github.io/tese-site/`.
 
-## Structure
+## Where to edit portraits and content
 
-- `/fr/` French version
-- `/en/` English version
-- `/assets/css/styles.css` visual design
-- `/assets/js/main.js` mobile menu
+- researcher thumbnails: `assets/images/team/`
+- research illustrations: `assets/images/research/`
+- pages: `/fr/` and `/en/`
 
-## Validation before public release
+## Note
 
-Replace or validate: team list, portraits, logos, legal notices, publication data, partner logos, HAL/ORCID/Google Scholar links, official contact details.
+The current member photos are refined placeholders. They can be replaced one by one with real portraits without changing the page structure.
