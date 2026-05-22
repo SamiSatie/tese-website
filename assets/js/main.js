@@ -1,4 +1,1 @@
-const btn=document.querySelector('[data-menu]');
-const nav=document.querySelector('[data-nav]');
-if(btn&&nav){btn.addEventListener('click',()=>nav.classList.toggle('open'));}
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+const b=document.querySelector('[data-menu]');const n=document.querySelector('[data-nav]');if(b&&n){b.addEventListener('click',()=>n.classList.toggle('open'));}
