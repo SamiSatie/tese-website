@@ -1,4 +1,4 @@
-# TeSE illustrated bilingual website
+# TeSE refined bilingual website
 
 Static bilingual website (French / English) prepared for GitHub Pages.
 
@@ -27,3 +27,7 @@ Static bilingual website (French / English) prepared for GitHub Pages.
 ## Note
 
 The current member photos are refined placeholders. They can be replaced one by one with real portraits without changing the page structure.
+
+## Refined V2
+
+This version refines the homepage composition and corrects French accents in visible text while keeping file names ASCII-only.
