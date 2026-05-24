@@ -1,33 +1,16 @@
-# TeSE refined bilingual website
+# TeSE website — V3 C2N-inspired
 
-Static bilingual website (French / English) prepared for GitHub Pages.
+Version statique bilingue, compatible GitHub Pages.
 
-## What changed in this version
+## Structure
+- `fr/` : version française
+- `en/` : version anglaise
+- `assets/` : CSS, JavaScript, images
 
-- integrated several illustrations extracted from the TeSE presentations;
-- introduced a new illustrated card component;
-- introduced researcher cards with thumbnail, grade and main employer;
-- added personal profile pages for each permanent member;
-- kept the site fully static and compatible with free GitHub Pages hosting.
+## Déploiement GitHub Pages
+1. Déposer tout le contenu de ce dossier à la racine du dépôt GitHub.
+2. Aller dans Settings > Pages.
+3. Choisir Deploy from a branch, branche main, dossier /root.
+4. Attendre la publication.
 
-## Publish on GitHub Pages
-
-1. Create a public repository, for example `tese-site`.
-2. Upload all files from this folder to the repository root.
-3. In **Settings > Pages**, choose **Deploy from a branch**.
-4. Select branch `main` and folder `/root`.
-5. The site will be published at `https://<username>.github.io/tese-site/`.
-
-## Where to edit portraits and content
-
-- researcher thumbnails: `assets/images/team/`
-- research illustrations: `assets/images/research/`
-- pages: `/fr/` and `/en/`
-
-## Note
-
-The current member photos are refined placeholders. They can be replaced one by one with real portraits without changing the page structure.
-
-## Refined V2
-
-This version refines the homepage composition and corrects French accents in visible text while keeping file names ASCII-only.
+Les noms de fichiers restent sans accents. Les textes visibles en français sont accentués.
