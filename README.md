@@ -14,3 +14,12 @@ Version statique bilingue, compatible GitHub Pages.
 4. Attendre la publication.
 
 Les noms de fichiers restent sans accents. Les textes visibles en français sont accentués.
+
+
+## V4 institutional additions
+
+- Clear strategic link to SATIE institutional website on every page.
+- New French page: `fr/laboratoire-satie.html`.
+- New English page: `en/satie-laboratory.html`.
+- Supervising-institution logo strip displayed before the footer on every page.
+- SVG logo placeholders are stored in `assets/logos/` and can be replaced by official validated logo files.
